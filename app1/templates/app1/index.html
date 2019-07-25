@@ -1,0 +1,185 @@
+{% load static %}
+{% load staticfiles %}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Resume</title>
+    <link type="text/css" rel="stylesheet" href="{% static 'css/blue.css' %}"/>
+    <link type="text/css" rel="stylesheet" href="{% static 'css/print.css' %}'" media="print"/>
+    <link rel="stylesheet" href="{% static 'css/app1.css' %}">
+    <link rel="stylesheet" href="{% static 'css/blue.css' %}">
+    <link rel="stylesheet" href="{% static 'css/print.css' %}">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/ie7.css'%}"/>
+    <![endif]-->
+    <link href="{% static 'css/ie6.css'%}" rel="stylesheet" type="text/css"/>
+    <![endif]-->
+</head>
+<body>
+<!-- Begin Wrapper -->
+<div id="wrapper">
+    <div class="wrapper-top"></div>
+    <div class="wrapper-mid">
+        <!-- Begin Paper -->
+        <div id="paper">
+            <div class="paper-top"></div>
+            <div id="paper-mid">
+                <div class="entry">
+                    <!-- Begin Image -->
+                    <img class="portrait" src="{% static 'images/eu.jpg' %}" alt="Ghita Alexandru"/>
+                    <!-- End Image -->
+                    <!-- Begin Personal Information -->
+                    <div class="self">
+                        <h1 class="name">Ghita Alexandru <br/>
+                            <span>Software Developer</span></h1>
+                        <ul>
+                            <li class="ad">Str.Soarelui Nr.2</li>
+                            <li class="mail">ghita.alexandru6@gmail.com</li>
+                            <li class="tel">0735434902</li>
+                            <li class="web">www.alex.ro</li>
+                        </ul>
+                    </div>
+                    <!-- End Personal Information -->
+                    <!-- Begin Social -->
+                    <div class="social">
+                        <ul>
+                            <li><a class='north' href="#" title="Download .pdf"><img
+                                    src="{% static 'images/icn-save.jpg' %}"
+                                    alt="Download the pdf version"/></a>
+                            </li>
+                            <li><a class='north' href="javascript:window.print()" title="Print"><img
+                                    src="{% static 'images/icn-print.jpg' %}" alt=""/></a></li>
+                            <li><a class='north' id="contact" href="{% static 'contact/index.html' %}"
+                                   title="Contact Me"><img
+                                    src="{% static 'images/icn-contact.jpg' %}" alt=""/></a></li>
+                            <li><a class='north' href="#" title="Follow me on Twitter"><img
+                                    src="{% static 'images/icn-twitter.jpg' %}"
+                                    alt=""/></a></li>
+                            <li><a class='north' href="#" title="My Facebook Profile"><img
+                                    src="{% static 'images/icn-facebook.jpg' %}"
+                                    alt=""/></a></li>
+                        </ul>
+                    </div>
+                    <!-- End Social -->
+                </div>
+                <!-- Begin 1st Row -->
+                <div class="entry">
+                    <h2>OBJECTIVE</h2>
+                    <p>Va urma...</p>
+                </div>
+                <!-- End 1st Row -->
+                <!-- Begin 2nd Row -->
+                <div class="entry">
+                    <h2>EDUCATION</h2>
+                    <div class="content">
+                        <h3>Sep 2010 - Iun 2014</h3>
+                        <p>Liceul Teoretic Radu Vladescu,Patarlagele <br/>
+                            <em>Matematica-Informatica</em></p>
+                    </div>
+                    <div class="content">
+                        <h3>Oct 2015 - Jun 2017</h3>
+                        <p>Facultatea de Inginerie Tehnologica si Management Industrial <br/>
+                            <em>Inginerie Economica Industriala</em></p>
+                    </div>
+                </div>
+                <!-- End 2nd Row -->
+                <!-- Begin 3rd Row -->
+                <div class="entry">
+                    <h2>EXPERIENCE</h2>
+                    <div class="content">
+                        <h3>Iul 2015 - Mar 2018</h3>
+                        <p>CGS,E-Value,Vodafone,CCC(Competence call center) <br/>
+                            <em>Agent Servicii clienti</em></p>
+                        <ul class="info">
+                            <li>Consilierea clientului prin intermediul telefonului</li>
+
+                        </ul>
+                    </div>
+                    <div class="content">
+                        <h3>Jul 2018 - Prezent</h3>
+                        <p>Libraria Compas <br/>
+                            <em>Lucrator Comercial</em></p>
+                        <ul class="info">
+                            <li> Consiliere client,aranjat standuri si rafturi,expunere marfa noua la raft.</li>
+                            <li><a href="https://www.librariacompas.ro/">Libraria Compas</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End 3rd Row -->
+                <!-- Begin 4th Row -->
+                <div class="entry">
+                    <h2>SKILLS</h2>
+                    <div class="content">
+                        <h3>Software Knowledge</h3>
+                        <ul class="skills">
+                            <li>Photoshop</li>
+                            <li>Illustrator</li>
+                            <li>AutoCAD</li>
+                            <li>MathCAD</li>
+                            <li>Delphi</li>
+                            <li>Dreamweaver</li>
+                        </ul>
+                    </div>
+                    <div class="content">
+                        <h3>Languages</h3>
+                        <ul class="skills">
+                            <li>CSS/HTML</li>
+                            <li>PHP</li>
+                            <li>JavaScript</li>
+                            <li>Ruby on Rails</li>
+                            <li>ActionScript</li>
+                            <li>C++</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End 4th Row -->
+                <!-- Begin 5th Row -->
+                <div class="entry">
+                    <h2>WORKS</h2>
+                    <ul class="works">
+                        <li><a href="{% static 'images/1.jpg' %}" rel="gallery" title="Lorem ipsum dolor sit amet."><img
+                                src="{% static 'images/image.jpg' %}'" alt=""/></a></li>
+                        <li><a href="{% static 'images/2.jpg' %}" rel="gallery" title="Lorem ipsum dolor sit amet."><img
+                                src="{% static 'images/image.jpg' %}" alt=""/></a></li>
+                        <li><a href="{% static 'images/3.jpg' %}" rel="gallery'"
+                               title="Lorem ipsum dolor sit amet."><img
+                                src="{% static 'images/image.jpg' %}" alt=""/></a></li>
+                        <li><a href="{% static 'images/1.jpg' %}" rel="gallery" title="Lorem ipsum dolor sit amet."><img
+                                src="{% static 'images/image.jpg' %}" alt=""/></a></li>
+                        <li><a href="{% static 'images/2.jpg' %}" rel="gallery" title="Lorem ipsum dolor sit amet."><img
+                                src="{% static 'images/image.jpg' %}" alt=""/></a></li>
+                        <li><a href="{% static 'images/3.jpg' %}" rel="gallery" title="Lorem ipsum dolor sit amet."><img
+                                src="{% static 'images/image.jpg' %}" alt=""/></a></li>
+                        <li><a href="{% static 'images/1.jpg' %}" rel="gallery" title="Lorem ipsum dolor sit amet."><img
+                                src="{% static 'images/image.jpg' %}" alt=""/></a></li>
+                        <li><a href="{% static 'images/1.jpg' %}" rel="gallery" title="Lorem ipsum dolor sit amet."><img
+                                src="{% static 'images/image.jpg' %}" alt=""/></a></li>
+                    </ul>
+                </div>
+                <!-- Begin 5th Row -->
+            </div>
+            <div class="clear"></div>
+            <div class="paper-bottom"></div>
+        </div>
+        <!-- End Paper -->
+    </div>
+    <div class="wrapper-bottom"></div>
+</div>
+<div id="message"><a href="{% static '' %}" id="top-link">Go to Top</a></div>
+<!-- End Wrapper -->
+
+<script type="text/javascript" src="{% static 'js/jquery-1.4.2.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/jquery.tipsy.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/cufon.yui.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/scrollTo.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/myriad.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/jquery.colorbox.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/custom.js' %}"></script>
+<script type="text/javascript">
+    Cufon.replace('h1,h2');
+</script>
+
+</body>
+</html>
