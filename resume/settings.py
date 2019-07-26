@@ -31,7 +31,7 @@ SECRET_KEY = ')f298ohs-9c$_h5em^l2&+c4lxe8h8z9h82biu)9yt6&4&jec('
 DEBUG = False
 
 ALLOWED_HOSTS = []
-LOGIN_REDIRECT_URL = 'index'
+#LOGIN_REDIRECT_URL = 'index'
 
 # Application definition
 
@@ -124,3 +124,5 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'user_registration/static')
+LOGIN_REDIRECT_URL = 'index'
+LOGOUT_REDIRECT_URL = 'index'
