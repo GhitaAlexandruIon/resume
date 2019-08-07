@@ -15,15 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.views.generic import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('user_registration.urls')),
 
     # neww
-    # path('admin/', admin.site.urls),
     path('accounts/', include('accounts.urls')),
     path('accounts/', include('django.contrib.auth.urls')),
-    # path('', TemplateView.as_view(template_name='index.html'), name='home'),
-    # path('', TemplateView.as_view(template_name='home.html'), name='home'),
+    path('as/', TemplateView.as_view(template_name='app1/index.html'), name='home'),
+    path('sd/', TemplateView.as_view(template_name='registration/signup.htm'), name='home'),
 ]
