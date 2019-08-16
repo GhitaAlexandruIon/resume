@@ -36,16 +36,19 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'user_registration',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'accounts.apps.AccountsConfig'
+    # my apps
+     'user_registration',
+    'accounts',
+    'portofolio',
 
 ]
+
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
