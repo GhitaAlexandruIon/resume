@@ -46,6 +46,7 @@ INSTALLED_APPS = [
      'user_registration',
     'accounts',
     'portofolio',
+    'curriculum',
 
 ]
 

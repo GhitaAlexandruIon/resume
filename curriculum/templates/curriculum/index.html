@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block containt %}
+    {% include 'curriculum/navbar.html' %}
+    <div class="container-fluid p-0">
+
+        {% include 'curriculum/about.html' %}
+        <hr class="m-0">
+
+        {% include 'curriculum/experience.html' %}
+        <hr class="m-0">
+
+        {% include 'curriculum/education.html' %}
+        <hr class="m-0">
+
+        {% include 'curriculum/skills.html' %}
+        <hr class="m-0">
+
+        {% include 'curriculum/interests.html' %}
+        <hr class="m-0">
+
+        {% include 'curriculum/awards.html' %}
+    </div>
+{% endblock %}
