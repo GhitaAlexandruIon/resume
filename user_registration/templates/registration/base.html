@@ -52,7 +52,7 @@
                     <a class="nav-link js-scroll-trigger" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+                    <a class="nav-link js-scroll-trigger" href={% url "experience" %}>Experience</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href=login.html>Education</a>
@@ -81,15 +81,10 @@
     {% endblock %}
 
     <div class="container-fluid p-0">
-
-        <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
-
-
+        <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about"></section>
     </div>
-    </section>
-        {% block content %}
-        {% endblock %}
-    </div>
+    {% block content %}
+    {% endblock %}
 </main>
 <hr>
 <footer>
