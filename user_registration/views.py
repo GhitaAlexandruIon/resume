@@ -4,15 +4,8 @@ from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
 from django.views import generic
 
+
 from user_registration.forms import LoginForm
-
-
-def index(request):
-    return render(request, 'index.html', {})
-
-
-def experience(request):
-    return render(request, 'experience.html', {})
 
 
 def login(request, user):
